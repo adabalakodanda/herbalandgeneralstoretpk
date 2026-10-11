@@ -1,0 +1,395 @@
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .category-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   TABLET / SMALL LAPTOP
+========================================= */
+
+@media (max-width: 850px) {
+
+    .header-search {
+        display: none;
+    }
+
+    .header-container {
+        min-height: 70px;
+    }
+
+    .categories-section,
+    .product-section {
+        padding: 50px 0;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-bottom: 65px;
+    }
+
+
+    /* Header */
+
+    .header-container {
+        min-height: 65px;
+    }
+
+    .brand {
+        min-width: 0;
+    }
+
+    .brand-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+
+    .brand h2 {
+        font-size: 17px;
+    }
+
+    .brand span {
+        font-size: 9px;
+    }
+
+    .header-actions {
+        gap: 7px;
+    }
+
+    .login-button {
+        width: 42px;
+        padding: 0;
+
+        justify-content: center;
+    }
+
+    .login-button span {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 440px;
+    }
+
+    .hero-content {
+        padding: 55px 5px;
+    }
+
+    .hero-content h1 {
+        font-size: 39px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-search {
+        width: 100%;
+    }
+
+    .hero-search input {
+        min-width: 0;
+    }
+
+    .hero-search button {
+        padding: 0 14px;
+    }
+
+
+    /* Sections */
+
+    .categories-section,
+    .product-section {
+        padding: 42px 0;
+    }
+
+    .section-heading,
+    .product-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .section-heading h2,
+    .product-heading h2 {
+        font-size: 24px;
+    }
+
+    .section-heading p {
+        font-size: 12px;
+    }
+
+
+    /* Categories */
+
+    .category-list {
+        display: flex;
+
+        overflow-x: auto;
+
+        gap: 10px;
+
+        scrollbar-width: none;
+
+        padding-bottom: 5px;
+    }
+
+    .category-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category-card {
+        flex: 0 0 105px;
+
+        min-height: 100px;
+
+        border-radius: 15px;
+    }
+
+    .category-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* Product */
+
+    .product-card {
+        flex: 0 0 190px;
+    }
+
+    .product-image {
+        height: 150px;
+    }
+
+
+    /* Slider Buttons */
+
+    .slider-buttons {
+        display: none;
+    }
+
+
+    /* Mobile Navigation */
+
+    .mobile-navigation {
+        position: fixed;
+
+        display: flex;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        height: 65px;
+
+        background: white;
+
+        border-top: 1px solid #e5e9e6;
+
+        z-index: 2000;
+
+        justify-content: space-around;
+
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .mobile-navigation a {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 3px;
+
+        color: #8b9690;
+
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .mobile-navigation a i {
+        font-size: 19px;
+    }
+
+    .mobile-navigation a.active {
+        color: #176b45;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .product-card {
+        flex-basis: 175px;
+    }
+
+}
+@media (max-width: 600px) {
+
+    .customer-order-timeline {
+        padding: 0;
+        margin: 18px 0;
+    }
+
+    .timeline-step {
+        min-width: 55px;
+        font-size: 10px;
+    }
+
+    .timeline-dot {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .timeline-line {
+        height: 2px;
+        margin: 0 2px;
+        margin-bottom: 23px;
+    }
+}
+@media (max-width: 600px) {
+
+    .category-heading-actions {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .view-all-category {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    .product-slider-buttons {
+        gap: 4px;
+    }
+
+    .product-slider-buttons button {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+    }
+
+}@media (max-width: 600px) {
+
+    .customer-details-overlay {
+        padding: 12px;
+    }
+
+    .customer-details-modal {
+        max-height: 94vh;
+        border-radius: 15px;
+    }
+
+    .customer-details-header {
+        padding: 18px;
+    }
+
+    #customerDetailsContent {
+        padding: 18px;
+    }
+
+    .customer-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-detail-section {
+        padding: 15px;
+    }
+
+    .customer-order-item {
+        gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+
+    .sales-summary {
+        padding: 18px;
+        margin-top: 20px;
+    }
+
+    .sales-summary-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .sales-summary-card {
+        padding: 16px;
+    }
+
+    .sales-summary-header h2 {
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 600px) {
+
+    .admin-profile-card {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 18px;
+    }
+
+    .admin-profile-info {
+        min-width: 0;
+    }
+
+    .admin-profile-info h3 {
+        font-size: 15px;
+        word-break: break-word;
+    }
+
+    .admin-logout-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+@media (max-width: 600px) {
+
+    .logout-modal {
+        padding: 25px 20px;
+        border-radius: 17px;
+    }
+
+    .logout-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .logout-modal-actions button {
+        width: 100%;
+    }
+
+}
