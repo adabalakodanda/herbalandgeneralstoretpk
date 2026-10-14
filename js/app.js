@@ -631,7 +631,7 @@ async function loadCustomerCategories() {
                 .from("categories")
                 .select("id, name, icon")
                 .eq("status", "active")
-                .order("name");
+                .order("display_order", { ascending: true });
 
         if (error) {
             throw error;
